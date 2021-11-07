@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+input{
+  margin: .5rem;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+table{
+  border: 2px solid;
+  border-color: blue;
+  border-style: groove;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  border-radius: 10px;
+  padding: 5px;
+}
+
+th{
+  background-color: lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
