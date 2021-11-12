@@ -29,7 +29,7 @@ const AssetForm = ({labelKey}) => {
                 value={amount}
                 onChange={e => setAmount(e.target.value)}
             />
-            </label>
+            </label><br/>
         </div>
     )
 }
