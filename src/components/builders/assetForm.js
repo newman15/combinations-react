@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import styled from "@emotion/styled";
 
-=======
->>>>>>> b12a32df004fb604973d3af605189ec05c408e1c
 // A generic form that takes a key as an argument
 // and returns input elements to be added to a form.
 // @param {labelKey} unique int/string
