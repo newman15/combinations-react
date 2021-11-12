@@ -10,12 +10,14 @@ const PropertyForm = ({labelKey, assetName}) => {
     const [name, setName] = useState(""); // Name State Hook
     const [amount, setAmount] = useState("1"); // Amount State Hook
 
+    // This is to hide the asset name on each loop in propertyBuilder.js
+    // propertyBuilder.js uses {assetName} to populate data.
     const Hide = styled.div`
         display: none;
     `;
 
     return (
-        <div>
+        <div className="flex-container">
             <Hide id={"propFormAssetName" + labelKey}>{assetName}</Hide>
             <label>
             Property Name:
@@ -36,7 +38,7 @@ const PropertyForm = ({labelKey, assetName}) => {
                 value={amount}
                 onChange={e => setAmount(e.target.value)}
             />
-            </label>
+            </label><br/>
         </div>
     )
 }

@@ -50,9 +50,9 @@ return (
                     document.getElementById("assetForm").style.display = "none";
                     setPropView(<PropertyBuilder objName={parentObjName} inputArray={sendArrayToPropBuilder} />);
                 }}>
-                    <Container>
-                        {assetNamesArray}
-                    </Container>
+                   
+                    {assetNamesArray}
+                    
                     <input type="submit" value="Submit" />
                 </form>
             </div>
