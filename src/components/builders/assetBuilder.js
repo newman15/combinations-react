@@ -1,15 +1,9 @@
-import styled from '@emotion/styled';
 import { useState } from 'react';
 import AssetForm from './assetForm';
 import PropertyBuilder from './propertyBuilder';
 
 const AssetBuilder = ({parentObjName, numOfAssets}) => {
 
-    // -------------------------- Styled Components ---------------------------
-    const Container = styled.div`
-        display: flex;
-        flex-direction: column;
-    `;
     // ------------------------------------------------------------------------
 
     let assetNamesArray = []; // Array that stores the GenericForm components for user input
