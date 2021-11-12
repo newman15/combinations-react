@@ -1,5 +1,8 @@
 import styled from "@emotion/styled";
+<<<<<<< HEAD
 import ReactHTMLTableToExcel from "react-html-to-excel";
+=======
+>>>>>>> b12a32df004fb604973d3af605189ec05c408e1c
 
 /* ----------------------------------------------------------------------------
  * Builds and returns a html table of combinations.
@@ -72,6 +75,7 @@ const BuildHtmlTable = ({arrayOfObj, assetNamesArray}) => {
     return (
         <Container>
             <h1 id="top-of-page">Table Results For: {arrayOfObj[0].object}</h1>
+<<<<<<< HEAD
             <table id="table-to-xls">
                 {title}
                 {tableBody}
@@ -87,6 +91,13 @@ const BuildHtmlTable = ({arrayOfObj, assetNamesArray}) => {
                 sheet="tablexls"
                 buttonText="Download As Excel"
             />
+=======
+            <table>
+                {title}
+                {tableBody}
+            </table>
+            <a href="#top-of-page">Return to the top</a>
+>>>>>>> b12a32df004fb604973d3af605189ec05c408e1c
         </Container>
         
     );
