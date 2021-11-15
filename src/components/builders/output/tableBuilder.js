@@ -14,6 +14,7 @@ const BuildHtmlTable = ({arrayOfObj, assetNamesArray}) => {
         overflow: scroll;
         border: solid 5px;
         padding: 10px;
+        justify-content: center;
     `;
     // ------------------------------------------------------------------------
 
@@ -77,16 +78,19 @@ const BuildHtmlTable = ({arrayOfObj, assetNamesArray}) => {
                 {tableBody}
             </table><br/>
 
-            <a href="#top-of-page">Return to the top</a><br/><br/><br/>
-            
-            <ReactHTMLTableToExcel
-                id="test-table-xls-button"
-                className="download-table-xls-button"
-                table="table-to-xls"
-                filename="combination-results"
-                sheet="tablexls"
-                buttonText="Download As Excel"
-            />
+           <div>
+                <ReactHTMLTableToExcel
+                    id="test-table-xls-button"
+                    className="download-table-xls-button"
+                    table="table-to-xls"
+                    filename="combination-results"
+                    sheet="tablexls"
+                    buttonText="Download As Excel"
+                />
+           </div><br/>
+
+           <a href="#top-of-page">Return to the top</a><br/><br/>
+                        
         </Container>
         
     );
