@@ -4,7 +4,7 @@
  * in the next and so on... exhausting the combination until the total amount 
  * is met.
 */
-exports.linearBuild = (arrayOfObjects) => {
+export function linearBuild(arrayOfObjects) {
 
     let data = arrayOfObjects; // Save argument as data variable
 
@@ -48,7 +48,7 @@ exports.linearBuild = (arrayOfObjects) => {
  * array of objects. The remaining categories are assigned to a random index 
  * within the newly created array of objects.
 */
-exports.randomBuild = (arrayOfObjects) => {
+export function randomBuild(arrayOfObjects) {
 
     let data = arrayOfObjects; // Save argument as data variable
     let randomCombinations = [];
